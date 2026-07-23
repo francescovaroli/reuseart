@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artist Portfolio</title>
+    <meta
+      name="description"
+      content="Minimal contemporary fine art portfolio with a single scrolling gallery experience."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=EB+Garamond:wght@400;500&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Fixed navigation that remains unobtrusive while scrolling -->
+    <header class="site-header" id="top">
+      <nav class="site-nav" aria-label="Primary">
+        <a class="brand" href="#top">Artist Name</a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Minimal hero introduction -->
+      <section class="hero" aria-labelledby="artist-name">
+        <div class="hero-inner">
+          <h1 id="artist-name">Artist Name</h1>
+          <p>
+            Quiet studies of light, memory, and form in contemporary space.
+          </p>
+          <div class="hero-links" aria-label="Quick links">
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vertical, full-width gallery flow -->
+      <section class="gallery" id="gallery" aria-label="Artwork gallery">
+        <article class="artwork reveal">
+          <figure>
+            <img
+              src="images/art1.jpg"
+              alt="Title I artwork"
+              class="artwork-image"
+              loading="lazy"
+              width="2400"
+              height="1600"
+            />
+            <figcaption>
+              <h2>Title I</h2>
+              <p class="meta">Oil on linen · 2024 · 120 × 160 cm</p>
+              <p>
+                A restrained composition shaped by tonal transitions and subtle
+                shifts in texture. Layers of paint suggest traces of movement
+                and stillness at once. The work invites a slower, contemplative
+                reading.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="artwork reveal">
+          <figure>
+            <img
+              src="images/art2.jpg"
+              alt="Title II artwork"
+              class="artwork-image"
+              loading="lazy"
+              width="1600"
+              height="2200"
+            />
+            <figcaption>
+              <h2>Title II</h2>
+              <p class="meta">Acrylic and graphite on panel · 2023</p>
+              <p>
+                Structured marks and transparent washes negotiate space between
+                construction and erasure. Fine graphite lines anchor the image,
+                while soft edges dissolve into the ground. The piece balances
+                precision with atmosphere.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="artwork reveal">
+          <figure>
+            <img
+              src="images/art3.jpg"
+              alt="Title III artwork"
+              class="artwork-image"
+              loading="lazy"
+              width="2400"
+              height="1500"
+            />
+            <figcaption>
+              <h2>Title III</h2>
+              <p class="meta">Mixed media on canvas · 2022 · 110 × 180 cm</p>
+              <p>
+                Broad fields of color are interrupted by delicate linear events,
+                creating a measured visual rhythm. The surface remains open and
+                breathable, emphasizing interval and pause. It reflects an
+                ongoing dialogue between material and light.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+    </main>
+
+    <!-- Simple contact footer -->
+    <footer class="site-footer" id="contact">
+      <p>Artist Name</p>
+      <p><a href="mailto:artist@email.com">artist@email.com</a></p>
+      <p><a href="https://instagram.com/artist" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+      <p>© <span id="year"></span> Artist Name. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
