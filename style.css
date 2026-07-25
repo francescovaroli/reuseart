@@ -2,6 +2,7 @@
   --bg: #ffffff;
   --text: #111111;
   --muted: #666666;
+  --artwork-max-width: 1200px;
   --space-page: clamp(1.25rem, 3.5vw, 3.5rem);
   --space-artwork: clamp(5rem, 10vw, 7.5rem);
   --nav-height: 4.5rem;
@@ -153,10 +154,12 @@ a {
 
 .artwork figure {
   margin: 0;
+  display: grid;
+  justify-items: center;
 }
 
 .artwork-image {
-  width: 100%;
+  width: min(100%, var(--artwork-max-width));
   height: auto;
   object-fit: contain;
   transition: transform 0.45s ease;
