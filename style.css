@@ -20,7 +20,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "Inter", sans-serif;
+  font-family: "Courier New", Courier, monospace;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
 }
@@ -55,7 +55,7 @@ a {
 }
 
 .brand {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.3rem;
   letter-spacing: 0.02em;
 }
@@ -123,7 +123,7 @@ a {
 
 .hero h1 {
   margin: 0;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 500;
   line-height: 1.08;
   font-size: clamp(3.2rem, 10vw, 7rem);
@@ -132,7 +132,7 @@ a {
 .hero p {
   margin: 1.25rem 0 0;
   color: var(--muted);
-  font-family: "EB Garamond", serif;
+  font-family: "Courier New", Courier, monospace;
   font-size: clamp(1.1rem, 2.2vw, 1.45rem);
   max-width: 35ch;
 }
@@ -176,7 +176,7 @@ a {
 
 .artwork h2 {
   margin: 0;
-  font-family: "EB Garamond", serif;
+  font-family: "Courier New", Courier, monospace;
   font-size: clamp(1.5rem, 2.8vw, 2rem);
   font-weight: 500;
 }
@@ -215,7 +215,7 @@ a {
 
 .site-footer p:first-child {
   color: var(--text);
-  font-family: "EB Garamond", serif;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.15rem;
 }
 
