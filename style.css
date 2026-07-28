@@ -66,6 +66,7 @@ a {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  align-items: center;
   font-size: 0.95rem;
 }
 
@@ -79,6 +80,25 @@ a {
 .hero-links a:hover,
 .site-footer a:hover {
   opacity: 0.65;
+}
+
+/* Language toggle button */
+.lang-toggle {
+  border: 1px solid var(--text);
+  background: transparent;
+  color: var(--text);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.55rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  line-height: 1.4;
+}
+
+.lang-toggle:hover {
+  background: var(--text);
+  color: var(--bg);
 }
 
 .menu-toggle {

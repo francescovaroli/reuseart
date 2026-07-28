@@ -36,8 +36,11 @@
           <span></span>
         </button>
         <ul class="nav-links" id="nav-links">
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#gallery" data-i18n="nav-gallery">Gallery</a></li>
+          <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+          <li>
+            <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">DE</button>
+          </li>
         </ul>
       </nav>
     </header>
@@ -47,12 +50,12 @@
       <section class="hero" aria-labelledby="artist-name">
         <div class="hero-inner">
           <h1 id="artist-name">reus.eart</h1>
-          <p>
+          <p data-i18n="hero-subtitle">
             Recreating my favourite places in Zurich, through my favourite pieces of art.
           </p>
           <nav class="hero-links" aria-label="Quick links">
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
+            <a href="#gallery" data-i18n="nav-gallery">Gallery</a>
+            <a href="#contact" data-i18n="nav-contact">Contact</a>
           </nav>
         </div>
       </section>
@@ -71,8 +74,8 @@
             />
             <figcaption>
               <h2>Mäda Unterach Fir Forest</h2>
-              <p class="meta">Collage · 2024 · 50 × 70 cm</p>
-              <p>
+              <p class="meta" data-i18n="art1-meta">Collage · 2024 · 50 × 70 cm</p>
+              <p data-i18n="art1-desc">
                 A late swim in the Limmat, when few people are still around, and the colors of the sunset fill the sky. 
                 This is how summer feels to me, the dreamlike evenings that should never end.
                 It's this emotion that I tried to capture using an old beautiful calendar of Klimt's masterpieces.
@@ -95,8 +98,8 @@
             />
             <figcaption>
               <h2>Nordbrüggli</h2>
-              <p class="meta">Collage · 2025 · 60 × 50 cm</p>
-              <p>
+              <p class="meta" data-i18n="art2-meta">Collage · 2025 · 60 × 50 cm</p>
+              <p data-i18n="art2-desc">
                 Sitting on the colorful chairs of Nordbrücke with a glass of wine and Wipkingen passing by.
                 Everyone should get to experience the life, community, chaos and joy of this place.
                 Leaving behind the solitude of the museum, the figures painted by Renoir, Van Gogh and many others, 
@@ -119,15 +122,16 @@
             />
             <figcaption>
               <h2>Dorme</h2>
-              <p class="meta">Collage · 2025 · 20 × 30 cm</p>
-              <p>
+              <p class="meta" data-i18n="art3-meta">Collage · 2025 · 20 × 30 cm</p>
+              <p data-i18n="art3-desc">
                 She is having a sleep in Van Gogh's blue skies, and it doesn't look like she's getting up anytime soon.
                 A rainy Sunday lost in this fluffy quilt is what I would call a good Winter day.
               </p>
             </figcaption>
           </figure>
         </article>
-                <article class="artwork reveal">
+
+        <article class="artwork reveal">
           <figure>
             <img
               src="images/viadukt.jpg"
@@ -139,8 +143,8 @@
             />
             <figcaption>
               <h2>Viadotto</h2>
-              <p class="meta">Collage · 2026 · 70 × 50 cm</p>
-              <p>
+              <p class="meta" data-i18n="art4-meta">Collage · 2026 · 70 × 50 cm</p>
+              <p data-i18n="art4-desc">
                 This old man is feeling the pressure of the whole city on his shoulders. None is around and yet everything is 
                 so crowded. Luckily he found this little corner, where an unexpected kiosk gives shelter to the wandering outcasts.
               </p>
@@ -160,15 +164,16 @@
             />
             <figcaption>
               <h2>Dipinge</h2>
-              <p class="meta">Collage · 2024 · 20 × 15 cm</p>
-              <p>
+              <p class="meta" data-i18n="art5-meta">Collage · 2024 · 20 × 15 cm</p>
+              <p data-i18n="art5-desc">
                 Is there a place between observation and creation? Pablo Picasso, Samuel Buri,
                 and Martin Peter Fluck join forces in this three-pieces collage depicting a simple answer to 
                 this impossible question.
               </p>
             </figcaption>
           </figure>
-        </article>      </section>
+        </article>
+      </section>
     </main>
 
     <!-- Simple contact footer -->
@@ -177,10 +182,10 @@
       <p><a href="mailto:francesco.varoli95@gmail.com">francesco.varoli95@gmail.com</a></p>
       <p>
         <a href="https://instagram.com/reus.eart" target="_blank" rel="noopener noreferrer">
-          Instagram/reus.eart <span class="sr-only">(opens in new tab)</span>
+          Instagram/reus.eart <span class="sr-only" data-i18n="footer-newtab">(opens in new tab)</span>
         </a>
       </p>
-      <p>© <span id="year"></span> reus.eart - All rights reserved.</p>
+      <p>© <span id="year"></span> reus.eart - <span data-i18n="footer-rights">All rights reserved.</span></p>
     </footer>
   </body>
 </html>
