@@ -1,4 +1,2 @@
 User-agent: *
 Allow: /
-Allow: /favicon-512.png
-Allow: /favicon.ico
