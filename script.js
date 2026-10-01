@@ -51,4 +51,10 @@ const observer = new IntersectionObserver(
   }
 );
 
-revealItems.forEach((item) => observer.observe(item));
+revealItems.forEach((item, index) => {
+  observer.observe(item);
+  // Show the first artwork immediately on page load
+  if (index === 0) {
+    item.classList.add('visible');
+  }
+});
